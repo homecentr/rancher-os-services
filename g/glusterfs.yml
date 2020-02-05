@@ -1,6 +1,6 @@
 glusterfs:
   image: homecentr/gluster-test #gluster/gluster-centos:latest
-  command: cat
+  command: sleep 10d
   privileged: true
   labels:
     io.rancher.os.scope: system
