@@ -1,5 +1,5 @@
 glusterfs:
-  image: gluster/gluster-centos:latest
+  image: homecentr/gluster-test #gluster/gluster-centos:latest
   privileged: true
   labels:
     io.rancher.os.scope: system
@@ -12,6 +12,7 @@ glusterfs:
   - /var/log/glusterfs:/var/log/glusterfs:z
   - /sys/fs/cgroup:/sys/fs/cgroup:ro
   - /dev:/dev
+  - /etc/resolv.conf:/etc/resolv.conf:ro
   restart: always
   #pid: host
   #ipc: host
