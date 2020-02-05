@@ -1,4 +1,4 @@
-glusterfs:
+homecentr-glusterfs:
   image: gluster/gluster-centos:latest
   privileged: true
   labels:
