@@ -9,6 +9,11 @@ glusterfs:
   volumes:
   - /media:/media:shared
   - /mnt:/mnt:shared
+  - /etc/glusterfs:/etc/glusterfs:z
+  - /var/lib/glusterd:/var/lib/glusterd:z
+  - /var/log/glusterfs:/var/log/glusterfs:z
+  - /sys/fs/cgroup:/sys/fs/cgroup:ro
+  - /dev/:/dev
   restart: always
   pid: host
   ipc: host
