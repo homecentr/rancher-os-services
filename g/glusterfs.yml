@@ -5,6 +5,8 @@ glusterfs:
     io.rancher.os.scope: system
     io.rancher.os.after: network
     io.docker.compose.rebuild: "false"
+  volumes_from:
+  - command-volumes
   volumes:
   - /mnt:/mnt
   - /etc/glusterfs:/etc/glusterfs:z
