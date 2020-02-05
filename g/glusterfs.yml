@@ -4,16 +4,12 @@ glusterfs:
   labels:
     io.rancher.os.scope: system
     io.rancher.os.after: network
-  volumes_from:
-  - all-volumes
   volumes:
-  - /media:/media:shared
-  - /mnt:/mnt:shared
+  - /mnt:/mnt
   - /etc/glusterfs:/etc/glusterfs:z
   - /var/lib/glusterd:/var/lib/glusterd:z
   - /var/log/glusterfs:/var/log/glusterfs:z
   - /sys/fs/cgroup:/sys/fs/cgroup:ro
-  - /dev/:/dev
   restart: always
   pid: host
   ipc: host
