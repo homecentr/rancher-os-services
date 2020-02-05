@@ -1,4 +1,4 @@
 services:
-- glusterfs
+- homecentr-glusterfs
 consoles:
 - homecentr-console
