@@ -1,2 +1,2 @@
-consoles:
-- homecentr-console
+services:
+- glusterfs
