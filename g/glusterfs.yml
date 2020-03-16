@@ -10,6 +10,7 @@ glusterfs:
   - command-volumes
   volumes:
   - /mnt:/mnt
+  - /data:/data
   - /etc/glusterfs:/etc/glusterfs:z
   - /var/log/glusterfs:/var/log/glusterfs:z
   - /var/lib/glusterd:/var/lib/glusterd:z
