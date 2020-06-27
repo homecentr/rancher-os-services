@@ -1,1 +1,1 @@
-# rancher-os-services
+> Homecentr does not use RancherOS anymore. This repository is archived and should not be used anymore.
